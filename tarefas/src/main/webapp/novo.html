@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Agenda de tarefas</title>
+<link rel="icon" href="imagens/Logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Criar nova tarefa</h1>
+	<form name="frmTarefa" action="insert">
+		<table>
+			<tr>
+				<td><input type="text" name="nome" placeholder="Nome da tarefa"
+					class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="prioridade"
+					placeholder="Insira a prioridade" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="dataRegistro"
+					placeholder="Data de registro" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="dataConclusao"
+					placeholder="Data de conclusão" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="descricao"
+					placeholder="Descrição da tarefa" class="Caixa1"></td>
+			</tr>
+		</table>
+		<input type="button" value="Adicionar" class="Botao1"
+			onclick="validar()">
+	</form>
+	<script src="scripts/validador.js"></script>
+</body>
+</html>
